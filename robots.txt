@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://asty-org.github.io/sitemap.xml

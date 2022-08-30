@@ -1,1 +1,56 @@
-<h1>Test</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Go-to-AST-JSON: Convert Go to AST-JSON instantly</title>
+    <link rel="stylesheet" href="static/css/app.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+</head>
+<body>
+    <header>
+        <div class="intro">
+            <div class="title">
+                <h1>Go-to-AST-JSON</h1>
+                <h2>Convert Go to AST-JSON</h2>
+            </div>
+            <div>
+                <p>
+                    This tool instantly converts Go into a AST-JSON.
+                </p>
+                <p>
+                    For an example, try converting Go from the <a href="javascript:void(0);" id="sample">Sample</a>.
+                </p>
+                <p>
+                    <a href="https://github.com/asty-org/asty-org.github.io" target="_blank">View on GitHub</a>
+                    &bull; Inspired by <a href="https://mholt.github.io/json-to-go/" target="_blank">JSON-to-Go</a>
+                </p>
+            </div>
+        </div>
+    </header>
+    <table>
+        <tr>
+            <th style="width: 45%;">Go</th>
+            <th style="width: 10%; font-size: 22px;">&#8594;</th>
+            <th style="width: 45%;">AST-JSON <label><input type="checkbox" id="comments">with Comments</label><label><input type="checkbox" id="positions">with Positions</label><label><input type="checkbox" id="references">with References</label></th>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td style="width: 50%;">
+                <div id="input" contenteditable></div>
+            </td>
+            <td style="width: 50%;">
+                <div id="output"></div>
+            </td>
+        </tr>
+    </table>
+
+    <footer>&copy; 2022 Yaroslav Podorvanov <svg xmlns="http://www.w3.org/2000/svg" width="15" height="10"><rect width="15" height="10" fill="#005BBB"/><rect width="15" height="5" y="5" fill="#FFD500"/></svg></footer>
+
+    <script src="static/js/app.js"></script>
+</body>
+</html>
